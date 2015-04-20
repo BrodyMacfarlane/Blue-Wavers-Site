@@ -1,0 +1,216 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	font-family: 'Helvetica Neue';
+	font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Circula';
+  src: url("fonts/circula-medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Existence';
+  src: url("fonts/Existence-UnicaseLight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('fonts/monosocialiconsfont/MonoSocialIconsFont-1.10.eot');
+    src: url('fonts/monosocialiconsfont/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('fonts/monosocialiconsfont/MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('fonts/monosocialiconsfont/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('fonts/monosocialiconsfont/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('fonts/monosocialiconsfont/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.symbol, a.symbol:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+a.symbol:before {
+    content: attr(title);
+    margin-right: 0.3em;
+    font-size: 130%;
+}
+
+.parallax-window {
+	width: 100%;
+	height: 100%;
+}
+
+.fatText {
+	font-size: 170px;
+	text-align: center;
+	position: relative;
+	top: 30%;
+}
+
+.raddies {
+	font-size: 40px;
+}
+
+.skipIntro, .backToTop {
+	color: #FFF;
+	font-style: normal;
+	border: 1px solid transparent;
+	border-radius: 25px;
+	background-color: transparent;
+	font-size: 28px;
+	display: inline-block;
+	padding: 5px;
+	transition: ease-in-out .15s;
+	text-decoration: none;
+}
+
+.backToTop {
+	margin-top: 50px;
+	margin-bottom: 0px;
+}
+
+.skipIntro {
+	margin-bottom: 100px;
+}
+
+.skipIntro:hover, .backToTop:hover {
+	transition: ease-in-out 0.1s;
+	will-change: color, background-color, border;
+	color: #A1CCEF;
+	background-color: #FFF;
+	border: 1px solid #FFF;
+	text-decoration: none;
+}
+
+.skipIntro a, .backToTop a, .skipIntro a:hover, .backToTop a:hover {
+	text-decoration: none;
+}
+
+.bodiedItems {
+	margin-top: 40px;
+	width: 100%;
+	height: 100%;
+	font-size: 24px;
+	color: #FFF;
+}
+
+.headText {
+	text-align: center;
+	font-size: 74px;
+	margin-bottom: 34px;
+}
+
+.headTextsml {
+	font-family: 'Circula';
+	text-align: center;
+	font-size: 32px;
+	margin-bottom: 15px;
+}
+
+.col-md-4 {
+	margin-bottom: 50px;
+	font-family: 'Existence';
+}
+
+.content {
+	margin-left: 100px;
+	margin-right: 100px;
+	font-family: 'Existence';
+}
+
+#cutOff {
+	height: 50%;
+	margin-top: 0px !important;
+}
+
+.transparent-bg {
+	height: 100%;
+	width: 100%;
+	background-color: #FFF;
+	padding: 25px;
+}
+
+.centerCol, .contact {
+	font-size: 20px;
+	text-align: center;
+	font-family: 'MonoSocialIconsFont';
+}
+
+.contact {
+	font-family: 'Existence';
+	font-size: 24px;
+	margin-bottom: 50px;
+}
+.divider {
+	position: relative;
+	top: 260px;
+	height: 1px;
+	width: 100%;
+	background-color: #B3B3B3;
+}
+
+.newsletter {
+	margin-top: 320px;
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+form {
+	margin-top: 25px;
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	right: 25px;
+}
+
+.footer {
+	height: 100%;
+}
+
+.btn {
+	transition: ease-in-out 0.35s;
+	color: white;
+	background-color: #A1CCEF;
+}
+
+.btn:hover {
+	transition: ease-in-out 0.2s;
+	will-change: color, background-color;
+	color: #A1CCEF !important;
+	background-color: white;
+}
+
+.symbol {
+	color: #DC7741;
+	font-size: 60px;
+	transition: ease-in-out 0.6s;
+}
+
+.symbol:hover {
+	transition: ease-in-out 0.2s;
+	will-change: color;
+	color: #F2C862;
+}
+
+.centerCol a {
+	text-decoration: none;
+}
+
+.centerCol a:hover {
+	text-decoration: none;
+}
