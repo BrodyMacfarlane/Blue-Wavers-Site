@@ -13,7 +13,7 @@ function wheel(event) {
 
 function handle(delta) {
     var time = 0.1;
-  var distance = 300;
+  var distance = 500;
     
     $('html, body').stop().animate({
         scrollTop: $(window).scrollTop() - (distance * delta)

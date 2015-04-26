@@ -1,88 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="bluewaversApp">
 <link rel="stylesheet" type="text/css" href="styles.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 <head>
 	<title>Blue Wavers</title>
 </head>
-<body>
-	<div class="header"><a name="header"></a>
-	</div>
-	<div class="parallax-window" data-parallax="scroll" data-image-src="imgs/LBTop.jpg">
-		<div class="fatText">BLUE WAVERS
-			<p class="raddies">2 rad years..</p>
-			<a href="#footer" class="skipIntro">Skip Intro</a>
-		</div>
-	</div>
-	<div class="bodiedItems parallax-window" data-parallax="scroll" data-image-src="imgs/orange.jpg">
-		<div class="headText">What is Blue Wavers?</div>
-		<div class="col-md-4"><p class="headTextsml">We love music!</p><p>That's a pretty bold and broad statement, and frankly, is false!  We love a very specific form of music.  No, it's not that dramatic bump of the kick drum, nor that 'flawless' vocal performance on television, or even that <em>'dope'</em> guy in front of the mansion with all of the ladies in his hot tub.  We cringe at the messages the media is secretly portraying to this generation.  This is where Indie Rock shines.</p></div>
-		<div class="col-md-4"><p class="headTextsml">We write music!</p><p>There's something to be said about the power of music, and the effect that it has on people and their minds.  Little do we realize it, but every word spoken to us will directly connect to the decisions we make.  That being said, the type of music you listen to correlates to the type of person you will become. It's all kind of cliche, but take a step back and look at yourself; look at your past.  When have you felt your truest bliss, when have you seen yourself at your best, and when were your darkest times?  What types of music were you listening to in those moments?  Do you see the connection?</p></div>
-		<div class="col-md-4"><p class="headTextsml">We support music!</p><p>In the end, it's all up to the world to decide its own fate.  Every choice we make sets a path, and we must walk down that path no matter the consequences.  Whether it be guilt, pain, pride, pleasure, it always comes, even if we don't see it.  These things we do, these things we say in our hazy mindset; These... are our Blind Intentions.</p></div>
-	</div>
-	<div class="parallax-window" data-parallax="scroll" data-image-src="imgs/traxPic.jpg">
-	</div>
-	<div class="bodiedItems" id="cutOff" class="parallax-window" data-parallax="scroll" data-image-src="imgs/blue.jpg">
-		<div class="headText">Why 'Blue Wavers'?</div>
-		<div class="content"><p>Ah, deciding on a band name.. The equivalent of staying up all night before a big event in the morning.  In the moment it's awesome, but you <em>always</em> regret it in the end.</p>
-		<p>We were always into the 80's stuff.  Taylor practically lived in the decade, but thats a whole other topic.  In the 80's, 'new wave' was a hit genre of music.  It pretty much set up what we know now as alternative music.  Catchy hooks, unforgettable lyrics, and the introduction of popular synthetic instruments became the voice of the decade, and who still doesn't <em>love</em> the older stuff!</p></div>
-	</div>
-	<div class="parallax-window" data-parallax="scroll" data-image-src="imgs/BW.jpg"></div>
-	<div class="parallax-window footer" data-parallax="scroll" data-image-src="imgs/LBTop.jpg"><a name="footer"></a>
-		<div class="headText">Keep in touch!</div>
-		<div class="col-md-4 centerCol">
-			<a href="https://twitter.com/bluewavers">
-				<span class="symbol">circletwitterbird</span>
-			</a>
-		</div>
-		<div class="col-md-4 centerCol">
-			<a href="https://soundcloud.com/bluewaversmusic">
-				<span class="symbol">circlesoundcloud</span>
-			</a>
-		</div>
-		<div class="col-md-4 centerCol">
-			<a href="https://instagram.com/bluewaversmusic/">
-				<span class="symbol">circleinstagram</span>
-			</a>
-		</div>
-		<div class="col-md-4 centerCol">
-			<a href="https://play.spotify.com/artist/4D0MlMCkvAiTqZIjqBKaT2">
-				<span class="symbol">circlespotify</span>
-			</a>
-		</div>
-		<div class="col-md-4 centerCol">
-			<a href="https://itunes.apple.com/us/artist/blue-wavers/id686660694">
-				<span class="symbol">circleitunes</span>
-			</a>
-		</div>
-		<div class="col-md-4 centerCol">
-			<a href="https://www.youtube.com/user/BlueWaversMusic">
-				<span class="symbol">circleyoutube</span>
-			</a>
-		</div>
-		<div class="divider"></div>
-		<div class="newsletter">
-		Type in your email to subscribe to our newsletter!  We send out the raddest tune of the week, so you won't even have to search for good music!
-	<div class="subscribe">
-			<form class="form-horizontal">
-  			<div class="form-group">
-    			<label for="inputEmail3" class="col-sm-2 control-label"></label>
-    				<div class="col-sm-10">
-      					<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-    				</div>
-  			</div>
-  			</form>
-				<button class="btn btn-lg">Subscribe</button>
-	</div>
-		<a href="#header" class="backToTop">Back to Top</a>
-	</div>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<body ng-view>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angularfire/dist/angularfire.min.js"></script>
+<script src="bower_components/firebase/firebase.js"></script>
 <script src="js/app.js"></script>
-<script src="js/mainCtrl.js"></script>
-<script src="js/mainService.js"></script>
+<script src="home/js/homeCtrl.js"></script>
+<script src="home/js/homeService.js"></script>
 <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script src="js/jQuery.js"></script>
-<script src="js/parallax.min.js"></script>
+<!-- <script src="js/parallax.min.js"></script> -->
+<!-- <script src="bower_components/picturefill/picturefill.js"></script>
+<script src="js/angular-responsive-parallax.js"></script> -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="twitter/js/twitterCtrl.js"></script>
+<script src="twitter/js/twitterService.js"></script>
 </body>
 </html>
