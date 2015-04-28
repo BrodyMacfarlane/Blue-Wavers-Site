@@ -2,27 +2,21 @@ var app = angular.module('bluewaversApp', ["firebase", "ngRoute"]);
 
 app.config(function($routeProvider, $locationProvider){
 	$routeProvider
-		.when('/home', {
-			templateUrl: 'home/homeTmpl.html',
+		.when('/', {
+			templateUrl: '/home/homeTmpl.html',
 			controller: 'homeCtrl'
 		})
-		.when('/twitter', {
-			templateUrl: 'twitter/twitterTmpl.html',
-			controller: 'twitterCtrl'
+		.when('/social', {
+			templateUrl: '/social/socialTmpl.html',
+			controller: 'socialCtrl'
 		})
-		.when('/soundcloud', {
-
-		})
-		.when('/instagram', {
-
-		})
-		.otherwise({
-			redirectTo:'/home'
-		})
-		$locationProvider.html5Mode({
-			enabled: true,
-			requireBase: false
-		});
+		// .otherwise({
+		// 	redirectTo:'/'
+		// })
+	$locationProvider.html5Mode({
+		enabled: true,
+		requireBase: false
+	})
 })
 
 app.constant('fbEmails', {
