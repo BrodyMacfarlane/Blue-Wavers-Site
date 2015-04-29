@@ -322,9 +322,11 @@ form {
 	border-top: none;
 }
 
-.socContent {
+
+/*messed up some margins but may come in handy later...*/
+/*.socContent {
 	margin-top: 20px;
-}
+}*/
 
 .margin {
 	margin-bottom: 50px;
@@ -337,4 +339,9 @@ form {
 
 iframe[id^='twitter-widget-']{ 
 	width:100% !important;
+}
+
+.sc {
+	margin-bottom: 50px;
+	border: none !important;
 }
